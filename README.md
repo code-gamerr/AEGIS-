@@ -6,7 +6,7 @@ Local-first control plane at the intersection of **AI/ML**, **infrastructure**, 
 
 ## Why this exists
 
-CNAPP and AI-SOC products (Wiz, XSIAM, Security Copilot) detect and copilot. Research gyms (CybORG / CAGE) train RL defenders but do not ship as an operator console. AEGIS is the missing local loop: detect → recommend → approve → audit, with a kill switch.
+CNAPP and AI-SOC products (Wiz, XSIAM, Securffity Copilot) detect and copilot. Research gyms (CybORG / CAGE) train RL defenders but do not ship as an operator console. AEGIS is the missing local loop: detect → recommend → approve → audit, with a kill switch.
 
 Longer research note (what we built, why now, which past incidents the loop is answering): [docs/AEGIS-RESEARCH-BRIEF.md](docs/AEGIS-RESEARCH-BRIEF.md).
 
