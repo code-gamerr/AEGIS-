@@ -55,22 +55,6 @@ Console on http://localhost:8080 — API on http://localhost:8000/api/health
 
 Compose sets `AEGIS_BOOTSTRAP_EPISODES` to `0` (API default is 80) so the healthcheck is not blocked by RL train; operators train or import a policy.
 
-## Remote training (Kaggle or GCP)
-
-The same job (`python -m app.train_job`) detects the platform:
-
-| Where | How |
-|---|---|
-| Local | `cd backend; python -m app.train_job --episodes 80` |
-| Kaggle | Dataset [codegamerr/aegis-src](https://www.kaggle.com/datasets/codegamerr/aegis-src). Kernel [codegamerr/aegis-rl-train](https://www.kaggle.com/code/codegamerr/aegis-rl-train) (Internet on, GPU off). Download `q_policy.json`. |
-| GCP Vertex AI | Set `GOOGLE_CLOUD_PROJECT` and `AEGIS_GCS_BUCKET`, then `.\train\gcp\submit.ps1`. Job uses `n1-standard-4` (no GPU — tabular Q-learning). Artifacts land in `gs://$BUCKET/aegis/policy`. |
-
-Bring weights into the console as **admin**:
-
-- Policy page → **Import q_policy.json** (Kaggle output)
-- Policy page → **Pull from GCS** (`gs://bucket/aegis/policy`)
-- or `AEGIS_GCS_URI=gs://bucket/aegis/policy python -m app.train_job --pull`
-
 ## Safety
 
 - Red actions in the gym: `recon`, `attempt_access`, `pivot`, `persist`, `degrade`
