@@ -1,0 +1,49 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+dist/
+build/
+docs/ 
+
+# Node / Vite
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local runtime (SQLite, Q-table, Isolation Forest, KDD cache)
+data/
+*.db
+*.db-wal
+*.db-shm
+*.joblib
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*~
+
+# Logs and test artifacts
+*.log
+playwright-report/
+test-results/
+.playwright-mcp/

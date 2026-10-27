@@ -1,0 +1,12 @@
+{
+  "id": "codegamerr/aegis-rl-train",
+  "title": "AEGIS RL Train",
+  "code_file": "aegis_train.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": ["codegamerr/aegis-src"]
+}
